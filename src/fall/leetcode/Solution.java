@@ -1,4 +1,4 @@
-package fall.leecode;
+package fall.leetcode;
 
 /*
  *
@@ -220,10 +220,7 @@ package fall.leecode;
 //正确答案
 public class Solution {
     public static void main(String[] args) {
-        int i = 7;
-        int j = 8;
-        int n = (i|j)%(i&j);
-        System.out.println(n);
+
     }
     private boolean isPalindrome(String s, int start, int end) {
         while (start < end) {

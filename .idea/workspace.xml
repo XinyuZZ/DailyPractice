@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="459c0b7f-9398-4c75-937c-c9d4497b6036" name="变更" comment="">
+    <list default="true" id="459c0b7f-9398-4c75-937c-c9d4497b6036" name="变更" comment="Modify 'leecode' to 'leetcode'">
+      <change afterPath="$PROJECT_DIR$/src/fall/leetcode/figure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DailyPractice/fall/leecode/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fall/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fall/leetcode/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.BinaryReverse">
+  <component name="RunManager" selected="应用程序.fall.leetcode.Solution">
     <configuration name="BinaryReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jensen.BinaryReverse" />
       <module name="DailyPractice" />
@@ -63,8 +66,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.BinaryReverse" />
         <item itemvalue="应用程序.fall.leetcode.Solution" />
+        <item itemvalue="应用程序.BinaryReverse" />
       </list>
     </recent_temporary>
   </component>
@@ -79,6 +82,7 @@
       <workItem from="1660116920693" duration="126000" />
       <workItem from="1660117733897" duration="398000" />
       <workItem from="1660118134559" duration="10000" />
+      <workItem from="1660119914645" duration="19446000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:XinyuZZ/DailyPractice&#10;&#10;# Conflicts:&#10;#&#9;README.md">
       <created>1660118000013</created>
@@ -94,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660118074765</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modify 'leecode' to 'leetcode'">
+      <created>1660120046721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660120046721</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Merge branch 'master' of github.com:XinyuZZ/DailyPractice&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:XinyuZZ/DailyPractice&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
+    <MESSAGE value="Modify 'leecode' to 'leetcode'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify 'leecode' to 'leetcode'" />
   </component>
 </project>

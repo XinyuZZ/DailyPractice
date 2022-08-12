@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="459c0b7f-9398-4c75-937c-c9d4497b6036" name="变更" comment="Modify 'leecode' to 'leetcode'">
-      <change afterPath="$PROJECT_DIR$/src/fall/leetcode/figure.properties" afterDir="false" />
+    <list default="true" id="459c0b7f-9398-4c75-937c-c9d4497b6036" name="变更" comment="截止到 Qn 15 三数之和">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DailyPractice/fall/leecode/Solution.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fall/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fall/leetcode/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +62,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fall.leetcode.Test" />
+      <module name="DailyPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fall.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.fall.leetcode.Solution" />
         <item itemvalue="应用程序.BinaryReverse" />
       </list>
@@ -82,7 +94,7 @@
       <workItem from="1660116920693" duration="126000" />
       <workItem from="1660117733897" duration="398000" />
       <workItem from="1660118134559" duration="10000" />
-      <workItem from="1660119914645" duration="19446000" />
+      <workItem from="1660119914645" duration="54832000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:XinyuZZ/DailyPractice&#10;&#10;# Conflicts:&#10;#&#9;README.md">
       <created>1660118000013</created>
@@ -105,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660120046721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="截止到 Qn 15 三数之和">
+      <created>1660187262467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660187262467</updated>
+    </task>
+    <task id="LOCAL-00005" summary="截止到 Qn 15 三数之和">
+      <created>1660187269380</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660187269380</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +152,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Merge branch 'master' of github.com:XinyuZZ/DailyPractice&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
     <MESSAGE value="Modify 'leecode' to 'leetcode'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify 'leecode' to 'leetcode'" />
+    <MESSAGE value="截止到 Qn 15 三数之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="截止到 Qn 15 三数之和" />
   </component>
 </project>

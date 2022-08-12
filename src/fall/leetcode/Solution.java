@@ -484,3 +484,315 @@ import java.util.*;
 //    }
 //}
 
+//17. 电话号码的字母组合
+//class Solution {
+//
+//    public List<String> letterCombinations(String digits) {
+//        if(digits==null || digits.length()==0) {
+//            return new ArrayList<String>();
+//        }
+//        //一个映射表，第二个位置是"abc“,第三个位置是"def"。。。
+//        //这里也可以用map，用数组可以更节省点内存
+//        String[] letter_map = {
+//                " ","*","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"
+//        };
+//        List<String> res = new ArrayList<>();
+//        //先往队列中加入一个空字符
+//        res.add("");
+//        for(int i=0;i<digits.length();i++) {
+//            //由当前遍历到的字符，取字典表中查找对应的字符串
+//            String letters = letter_map[digits.charAt(i)-'0'];
+//            int size = res.size();
+//            //计算出队列长度后，将队列中的每个元素挨个拿出来
+//            for(int j=0;j<letters.length();j++) {
+//                //每次都从队列中拿出第一个元素
+//
+//                //然后跟"def"这样的字符串拼接，并再次放到队列中
+//                for(int k=0;k<size;k++) {
+//                    String tmp = res.remove(0);
+//                    res.add(tmp+letters.charAt(j));
+//                }
+//            }
+//        }
+//        return res;
+//
+//    }
+//}
+
+
+// 19 删除链表的倒数第 N 个结点
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+//
+//class Solution {
+//    public ListNode removeNthFromEnd(ListNode head, int n) {
+//        ListNode pre = new ListNode();
+//        ListNode cur = new ListNode(0,head);
+//        pre = cur;
+//        int length = 1;
+//        while (!(head.next == null)) {
+//            head = head.next;
+//            length++;
+//        }
+//        for (int i = 0; i < length - n; i++) {
+//            cur=cur.next;
+//        }
+//        cur.next=cur.next.next;
+//        return pre.next;
+//    }
+//}
+
+// 20 有效的括号
+
+//class Solution {
+//    public boolean isValid(String s) {
+//        Stack<Character> stack = new Stack<>();
+//
+//        if (s.length() == 0) {
+//            return true;
+//        }
+//        for (Character c : s.toCharArray()) {
+//            if (c == '[') {
+//                stack.push(']');
+//                continue;
+//            }
+//            if (c == '{') {
+//                stack.push('}');
+//                continue;
+//            }
+//            if (c == '(') {
+//                stack.push(')');
+//                continue;
+//            }
+//            if (stack.isEmpty() || !(stack.pop() == c)) {
+//                return false;
+//            }
+//        }
+//        return stack.isEmpty();
+//    }
+//}
+
+//21 合并两个有序链表
+//class Solution {
+//
+//    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+//        ListNode listNode = new ListNode(0, new ListNode());
+//        ListNode pre = listNode;
+//        if (list1 == null && list2 != null) {
+//            return list1;
+//        }
+//        if (list1 != null && list2 == null) {
+//            return list2;
+//        }
+//        if (list1 == null && list2 == null) {
+//            return null;
+//        }
+//
+//        while (list1 != null || list2 != null) {
+//            if (list1 == null) {
+//                listNode.next = list2;
+//                break;
+//            }
+//            if (list2 == null) {
+//                listNode.next = list2;
+//                break;
+//            }
+//            if (list1.val <= list2.val) {
+//                listNode.next = list1;
+//                listNode = listNode.next;
+//                list1 = list1.next;
+//            }
+//            listNode.next = list2;
+//            listNode = listNode.next;
+//            list2 = list2.next;
+//        }
+//        return pre.next;
+//    }
+//}
+
+
+// 括号生成
+//class Solution {
+//    List<String> res = new ArrayList<>();
+//
+//    public List<String> generateParenthesis(int n) {
+//        if (n <= 0) return null;
+//
+//        def("", 0, 0, n);
+//
+//        return res;
+//    }
+//
+//    public void def(String paths, int left, int right, int n) {
+//
+//        if (left > n || right > left) return;
+//        if (paths.length() == n * 2) {
+//            res.add(paths);
+//            return;
+//        }
+//        def(paths + "(", left + 1, right, n);
+//        def(paths + ")", left, right + 1, n);
+//    }
+//}
+
+
+// 23. 合并K个升序链表 （未完成）
+
+//class Solution {
+//    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+//        ListNode listNode = new ListNode(0, new ListNode());
+//        ListNode pre = listNode;
+//        if (list1 == null && list2 != null) {
+//            return list1;
+//        }
+//        if (list1 != null && list2 == null) {
+//            return list2;
+//        }
+//        if (list1 == null && list2 == null) {
+//            return null;
+//        }
+//
+//        while (list1 != null || list2 != null) {
+//            if (list1 == null) {
+//                listNode.next = list2;
+//                break;
+//            }
+//            if (list2 == null) {
+//                listNode.next = list2;
+//                break;
+//            }
+//            if (list1.val <= list2.val) {
+//                listNode.next = list1;
+//                listNode = listNode.next;
+//                list1 = list1.next;
+//            }
+//            listNode.next = list2;
+//            listNode = listNode.next;
+//            list2 = list2.next;
+//        }
+//        return pre.next;
+//    }
+//
+//    public ListNode mergeKLists(ListNode[] lists) {
+//
+//
+//
+//        if (lists.length==0){
+//            return null;
+//        }
+//        if (lists.length==1){
+//            return lists[0];
+//        }
+//        ListNode cur = lists[0];
+//        for (int i =1;i< lists.length;i++){
+//           cur = mergeTwoLists(cur,lists[i]);
+//        }
+//        return cur;
+//    }
+//}
+
+//322 零钱兑换
+
+
+//// 最大11正方形
+//class Solution {
+//    public int maximalSquare(char[][] matrix) {
+//
+//        int m = matrix.length;
+//        int n = matrix[0].length;
+//        int[][] intMatrix = new int[m][n];
+//        for (int i = 0; i < m; i++) {
+//            for (int j = 0; j < n; j++) {
+//                intMatrix[i][j] = (int) matrix[i][j];
+//            }
+//        }
+//        return getMax(intMatrix,m,n);
+//
+//
+//    }
+//
+//    public int getMax(int[][] matrix, int m, int n) {
+//        int max = -1;
+//        for (int i = 1; i < m; i++)
+//            for (int j = 1; j < n; j++) {
+//                if (matrix[i][j] == 1) {
+//                    int min = matrix[i - 1][j - 1];
+//                    if (matrix[i - 1][j] < min)
+//                        min = matrix[i - 1][j];
+//                    if (matrix[i][j - 1] < min)
+//                        min = matrix[i][j - 1];
+//                    matrix[i][j] += min;
+//                    if (max < matrix[i][j])
+//                        max = matrix[i][j];
+//                }
+//            }
+//        return max * max;
+//    }
+//}
+
+
+//LCP 09 最小跳跃次数
+//我的不完整答案
+//class Solution {
+//    public int minJump(int[] jump) {
+//        int length = jump.length;
+//        int[] afterJump = new int[length];
+//        for(int i =0; i<length;i++){
+//            afterJump[i] = jump[i]+i;
+//        }
+//        int count=0;
+//        int actualLocation = 0;
+//        int newLocation = 0;
+//        while(actualLocation<length){
+//            for (int j = 0;j<=actualLocation;j++){
+//                if (afterJump[j]> afterJump[actualLocation]){
+//                    newLocation = Math.max(afterJump[j],newLocation);
+//                }
+//            }
+//            if (afterJump[actualLocation]>=length){
+//                count++;
+//                return count;
+//            }
+//            if (newLocation>afterJump[actualLocation]){
+//                actualLocation=newLocation;
+//                count+=2;
+//            }else {
+//                actualLocation = afterJump[actualLocation];
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//}
+
+//大佬的7行代码
+//class Solution {
+//    public int minJump(int[] jump) {
+//        int[] dp = new int[jump.length];
+//        dp[jump.length - 1] = 1;
+//        for(int i = jump.length - 2; i > -1; --i){
+//            dp[i] = jump[i] + i >= jump.length ? 1 : dp[jump[i] + i] + 1;
+//            //遍历当前位置更新后影响到的后面的位置，只需要更新到dp[j] >= dp[i]+1即可
+//            //如果遍历到某dp[j]<dp[i]+1就不需要向右遍历了,因为j到dp.length的值会被当前遍历到的dp[j]更新而不是dp[i]+1
+//            for(int j = i + 1; j < dp.length && dp[j] >= dp[i] + 1; ++j){
+//                dp[j] = dp[i] + 1;
+//            }
+//        }
+//        return dp[0];
+//    }
+//}
+
